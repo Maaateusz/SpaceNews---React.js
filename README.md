@@ -1,11 +1,11 @@
 # SpaceNews---React.js
 
-![Page](img/localhost_3000_.png)
+<img src="img/localhost_3000_.png" width="600" />
 
-![Page](img/localhost_3000_ (1).png)
+<img src="img/localhost_3000_ (1).png" width="600" />
 
-![Page](img/localhost_3000_ (2).png)
+<img src="img/localhost_3000_ (2).png" width="600" />
 
-![Page](img/localhost_3000_ (3).png)
+<img src="img/localhost_3000_ (3).png" width="400" />
 
-![Page](img/localhost_3000_ (4).png)
+<img src="img/localhost_3000_ (4).png" width="400" />
