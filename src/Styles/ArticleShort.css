@@ -1,0 +1,75 @@
+.ArticleShort {
+    border-top: 1px solid gray;
+    border-bottom: 3px solid gray;
+    position: relative;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 3px;
+    background-color: rgb(178, 197, 216);
+    -webkit-box-shadow: 0px 0px 25px -4px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 0px 25px -4px rgba(66, 68, 90, 1);
+    box-shadow: 0px 0px 25px -4px rgba(66, 68, 90, 1);
+}
+
+.ArticleShort:hover {
+    background-color: rgb(228, 235, 235);
+}
+
+.ArticleShort-author {
+    position: absolute;
+    color: black;
+    background-color: gainsboro;
+    padding: 5px;
+    border-radius: 5px;
+    top: 9px;
+    left: 9px;
+    margin: 0;
+    font-size: 0.7em;
+    font-weight: 600;
+    -webkit-box-shadow: 0px 0px 21px -2px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 0px 21px -2px rgba(66, 68, 90, 1);
+    box-shadow: 0px 0px 21px -2px rgba(66, 68, 90, 1);
+}
+
+.ArticleShort-img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.ArticleShort-title {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: 5px 0 5px 0;
+}
+
+.ArticleShort-link {
+    text-decoration: none;
+}
+
+.ArticleShort-summary {
+    font-size: 0.9em;
+    margin: 7px 2 7px 2;
+    text-align: justify;
+}
+
+.ArticleShort-date {
+    font-size: 0.7em;
+    margin: 5px 0 5px 0;
+    text-align: right;
+    color: rgb(61, 64, 70);
+}
+
+@media screen and (max-width: 700px) {
+
+    .ArticleShort {
+        min-width: 222px;
+        line-height: 1.1;
+        overflow: auto;
+    }
+
+    .ArticleShort-img {
+        height: 50%;
+        object-fit: cover;
+    }
+
+}

@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    min-width: 300px;
+}
+
+#root {
+    width: 100%;
+    min-width: 300px;
+    height: 100%;
+}
+
+#App {
+    background-color: rgb(218, 218, 218);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+#App.dark {
+    background-color: rgb(32, 57, 104);
+}
+
+footer {
+    order: 3;
+    align-self: stretch;
+    background-color: rgb(167, 187, 207);
+    color: black;
+    padding: 4px;
+
+    -webkit-box-shadow: 0px 0px 24px 0px rgb(66 68 90);
+    -moz-box-shadow: 0px 0px 24px 0px rgb(66 68 90);
+    box-shadow: 0px 0px 24px 0px rgb(66 68 90);
+}
+
+footer.dark {
+    background-color: rgb(9, 14, 32);
+    color: white;
+}
+
+footer>p {
+    margin: 0;
+}
+
+main {
+    order: 2;
+    align-self: stretch;
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    justify-content: center;
+    align-items: stretch;
+    height: calc(100% - 75px - 29px);
+}
+
+#articles {
+    flex: 1 1 30%;
+    overflow: auto;
+    min-width: 300px;
+    max-width: 420px;
+    padding: 2px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+#article {
+    flex: 1 1 70%;
+    min-width: 360px;
+}
+
+#article.dark {
+    color: white;
+}
+
+#article>h2 {
+    margin: 5px;
+    font-size: 1.1em;
+}
+
+.article-iframe {
+    width: 100%;
+    height: calc(100% - 21px);
+    border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+a.dark {
+    color: white;
+}
+
+p {
+    margin: 0;
+}
+
+@media screen and (max-width: 700px) {
+    main {
+        align-self: stretch;
+        flex: 1 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-content: stretch;
+        justify-content: flex-start;
+        align-items: stretch;
+    }
+
+    #articles {
+        flex: 1 1 30%;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: stretch;
+        align-content: stretch;
+        max-width: 100%;
+    }
+
+    #article {
+        flex: 1 1 70%;
+    }
+
+
+
+}
